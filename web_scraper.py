@@ -48,7 +48,8 @@ class Server:
 
         c=0
         for i in p_tags:
-            if not i.findChildren():
+            if not i.find_all('p'):
+            #if not i.findChildren():
                 c+=1
 
         return c
